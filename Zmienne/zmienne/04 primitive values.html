@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //dynamicznie typowany język
+        let data = 10; //liczba
+        let num = 8;
+        //data = "hello"; //string
+        let flag = true; //wartość logiczna
+        flag = false;
+        let someValue; // brak przypisania podczas deklaracji przypisuje undefined
+        console.log(someValue); //undefined
+        someValue = 2137;
+        console.log(someValue);
+        someValue = null;
+        console.log(someValue);
+        data = `hello
+            World
+            and ${num+data}
+            Hello
+        `;
+        console.log(data);
+    </script>
+</body>
+</html>

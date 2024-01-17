@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = 0;
+
+        if(data > 5){
+            console.log("liczba w data jest wieksza od 5");
+        }
+
+        if(data < 5){
+            console.log("liczba w data jest mniejsza od 5");
+        }
+
+        let age = 18;
+        if(age >= 18){
+            console.log("może głosować");
+        } else {
+            console.log("nie może głosowac");
+        }
+
+        let sportRanking = 1;
+
+        if(sportRanking ==1 ){
+            console.log("zdobywasz złoto");
+        } else if(sportRanking == 2){
+            console.log("zdobywasz srebro");
+        }else if(sportRanking == 3){
+            console.log("zdobywasz brąz");
+        }
+        else{
+            console.log("jesteś poza podium");
+        }
+
+        //SWITCH
+
+        let topSpeed = 80;
+
+        switch(topSpeed){
+            case 100:
+                console.log("mała predkosc maksymalna");
+                break;
+            case 150:
+                console.log("predkosc 150km/h");
+                break;
+            case 200:
+                console.log("szybko 200 km/h");
+                break;
+            case 250:
+                console.log("250 km/h");
+                break;
+            case 300:
+                console.log("300 km/h");
+                break;
+            case 310:
+            case 320:
+            case 330:
+                console.log("ale szybko");
+                break;    
+            default:
+                console.log("brak informacji");
+        }
+
+    </script>
+</body>
+</html>

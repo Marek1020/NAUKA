@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let temperatura = 3;
+        const rcb = "zostań w domu";
+
+        if( temperatura <= -10 || temperatura >= 40){
+            console.log(rcb)
+        }
+
+        switch(temperatura){
+            case -10:
+                console.log("jest bardzo zimno");
+                break;
+            case 0:
+                console.log("jest zimno");
+                break;
+            case 10:
+                console.log("jest wiosna");
+                break;
+            case 20:
+                console.log("jest lato");
+                break;
+            case 30:
+                console.log("jest gorąco");
+                break;
+            case 40:
+                console.log("jest bardzo gorąco");
+            break;
+            default:
+                console.log("-_-");
+        }
+    </script>
+    
+</body>
+</html>
