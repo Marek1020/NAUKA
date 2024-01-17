@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function add(a,b){
+            let c = a + b;
+            console.log("wynik: ",c);
+        }
+
+        add(3,4);
+        add(2,3);
+
+        function multiply(a,b){
+            return a * b;
+        }
+
+        let result = multiply(4,5);
+        console.log("wynik mnożenia: ",result);
+
+
+        //wyrażenie funkcyjne
+        let division = function (a,b){
+            return a / b;
+        }
+
+        let divisionResult= division(100,3);
+        console.log("wynik dzielenia: ",divisionResult);
+
+        let data = 55; // zmienna globalna
+        
+        function test() {
+            let text = "hello" //zmienna lokalna, widoczna tylko w funkcji
+            console.log("wartość data: ",data);
+            console.log("wartość text: ",text);
+        }
+
+        test();
+        console.log(text);
+
+    </script>
+</body>
+</html>
