@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //number pozwala na zapis liczb całkowitych oraz dziesiętnych
+
+    
+        let a = 1; //liczba całkowita
+        let b = 1.2137; //liczba dziesiętna
+        let c = 0xf; //15 
+        const d = .45; // to samo co 0.45
+
+        //maksymalna bezpieczna liczba całklowita dodatnia i ujemna
+        console.log(Number.MAX_SAFE_INTEGER); //9007199254740991
+        console.log(Number.MIN_SAFE_INTEGER); //-9007199254740991
+
+        console.log(Number.isSafeInteger(9007199254740991));
+        console.log(Number.isSafeInteger(9007199254740992));
+
+        //NaN - not a number -specjalna wartość która określa ze coś nie jest liczba
+
+        const someNaN = 0/0;
+        console.log(someNaN); //NaN
+        console.log(Math.sqrt(-1)); //NaN
+        let someNum = parseInt("12.345");
+        console.log(someNum); //12 liczba całkowita
+
+        console.log(parseInt("tekst12.345")); //NaN
+
+        console.log(isNaN(0/0));
+        console.log(Number.isNaN(67));
+    </script>
+</body>
+</html>

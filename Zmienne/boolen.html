@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let flag = true;
+
+    if(flag==true){
+        console.log("prawda");
+    }
+
+    if(flag) console.log("skrótowo i prawda");
+    if(!flag) console.log("skrótowo i fałsz");
+
+    console.log(true); //true
+    console.log(!true); // false
+
+    //falsy values- "fałsszywe wartości"
+
+    let data = "";
+
+    if(data){ //data bedzie zamieniona na wartość boolen
+              // nazywamy to konwersja z jednego typu wartości na inny
+        console.log("prawda");
+    }
+
+    let data2 = "tekst";
+
+    if(data2){
+        console.log("prawda");
+    }
+
+    //falsy values zawsze konwertowane jest na flase
+    //"" pusty string
+    //0,-0
+    //0n BigInt
+    //NaN
+    //null
+    //undefined
+    //false
+
+    let data3 = null;
+
+    if(data3){ //null skonwertowany jest na false
+        console.log("data3 ma wartość true");
+    }
+    else{
+        console.log("data 3 ma wartość false");
+    }
+
+    //truthy values - prawdziwe wartości
+    // te wartości sa konwertowane na true
+    // "tekst"
+    // liczby rózne od zera
+    //[], [2,5,6]
+    //{}, {a:1}, window
+    //function test(){}
+
+    let test = -3;
+    if(test){
+        console.log("prawda ", test);
+    }
+
+
+
+</script>
+
+</body>
+</html>
