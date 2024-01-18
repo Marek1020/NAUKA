@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #calc {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            max-width: 450px;
+            text-align: right;
+        }
+        .result{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="calc">
+        <label for="">Kapitał</label> <input type="text" id="capital" value="1000">
+        <label for="">Rate</label> <input type="text" id="rate" value="0.04">
+        <label for="">Month</label> <input type="text" id="m" value="12">
+        <label for="">Yer</label> <input type="text" id="y" value="10">
+
+        <span></span><button id="calculate">OBLICZ</button>
+        <label for="" class="result">Wynik</label> <input type="text" id="resultValue">
+    </div>
+
+
+    <script>
+        const inputCapital= document.getElementById("capital");
+        const inputRate= document.getElementById("rate");
+        const inputMonth= document.getElementById("m");
+        const inputYer= document.getElementById("y");
+        const inputResultValue= document.getElementById("resultValue");
+        
+        
+
+        //let capital = inputCapital.value;
+        //let rate = inputRate.value;
+        //let m = inputMonth.value; //kapitalizacja co ile miesiecy
+        //let y = inputYer.value; //na ile lat lokata
+
+        //let finalMoney = capital * Math.pow((1 + (rate/m)), m * y);
+        //console.log(Math.ceil(finalMoney));
+
+        function calculateCompoundIntrest(capital,rate,m,y){
+            return capital * Math.pow((1 + (rate/m)), m * y); 
+        }
+
+
+        document.getElementById("calculate").addEventListener("click", function(){
+            let capital = inputCapital.value;
+        let rate = inputRate.value;
+        let m = inputMonth.value; //kapitalizacja co ile miesiecy
+        let y = inputYer.value; //na ile lat lokata
+        let result = calculateCompoundIntrest(capital,rate,m,y);
+        inputResultValue.value = result.toFixed(2);
+        })
+    </script>
+</body>
+</html>
