@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //tablice nie są typem a obiektem
+        // mogą przechowywać typy proste i złożone
+
+        let a = []; //tablica pusta
+        let b = [22,"tekst,", {a:1}, [5,4,3], function(){}]
+        console.log(b);
+        console.log(b[6]);// undefined
+        console.log(b[b.length-1]); //ostatni element to null
+        console.log(b[0]); //22
+        b[2] = 99;
+        console.log(b);
+
+        let c = new Array(12,"tekst",9);
+        console.log(c);
+
+        let e = [];
+        e[0] = "test1"; 
+        e[1] = "test2"; 
+        e[2] = "test3"; 
+        e[7] = "test4";
+
+        let t = [];
+        t[0] = "test1"; 
+        t[1] = "test2"; 
+        t[2] = "test3";
+        t[t.length]= "test4";
+        t.push("test 5");
+        console.log(t);        
+        console.log(e);
+
+        let f = [0,1,2,3,4,5,6,7];
+        console.log(f);
+        f.length = 4;
+        console.log(f); //0,1,2,3
+        delete f[1];
+        console.log(f); //[0, pusty, 2, 3]
+        console.log(f[1]); //undefined
+
+        console.log(1 in f); //false
+        console.log(2 in f); //true
+
+        let g = Array(5).fill(7);
+        console.log(g);
+
+        let h = [99,23,54,12,7,34,"tekst"];
+
+            for( let i=0; i< h.length; i++){
+                console.log(h[i]);
+            }
+
+            let arr1 = [5,2,"as2",54];
+
+            arr1.forEach(function(item, index, array){
+                console.log(item, index);
+
+            });
+
+            let arr2 = arr1.concat([1,2,3]);
+            console.log(arr2);
+
+            let strFromArr = arr1.join();
+            console.log(strFromArr); //"5,2,as2,54"
+            let strFromArr2 = arr1.join("|");
+            console.log(strFromArr2); //"5|2|as2|54"
+
+            let arr4 = [1,2,3,4];
+            arr4.reverse();
+            console.log(arr4); //4,3,2,1
+
+            arr4.push(99);
+            console.log(arr4);
+
+            let arrEl = arr4.pop();
+            console.log(arrEl); //pobiera ostatnia wartość "99" i usuwa ją z tablicy
+            console.log(arr4);// 4,3,2,1
+
+
+    </script>
+</body>
+</html>
