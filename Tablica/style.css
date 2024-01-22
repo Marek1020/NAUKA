@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+.button {
+    background-color: rgb(191, 255, 132);
+    border: 0;
+    min-width: 7vw;
+    min-height: 50px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+input{
+    background-color: rgb(105, 105, 105);
+    border: 0;
+    min-width: 40vw;
+    text-align: center;
+    color: white;
+    min-height: 80px;
+    font-size: 40px;
+    
+}
+
+input::placeholder{
+    color: rgb(201, 167, 167);
+}
+
+
+
+span{
+    max-width: 80vw;
+}
+
+div{
+    padding: 20px;
+    margin: 10px;
+    color: blacka;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    background: rgb(165, 250, 162);
+    word-wrap: break-word;
+    white-space: normal;
+}

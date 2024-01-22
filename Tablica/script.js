@@ -15,7 +15,9 @@ const readValue = () =>{
 const printTab = (data) => {
     clear();
     data.forEach((element, key) =>{
-        values.innerHTML += `<div class="content" ><div>${key+1} </div><span>${element}</span><button onclick="rmData(${key})">X</button></div>`;
+        //values.innerHTML +=`<div class="content" ><div>${key+1} </div><span>${element}</span><button onclick="rmData(${key}")>X</button></div>`
+        values.innerHTML += `<div class="content" ><div>${key+1} </div><span>${element}</span><button onclick="rmData(${key})">X</button><br/></div>`;
+
     });
     resetValue();
 }
@@ -58,4 +60,3 @@ const clear = () =>{
 const resetValue = () => {
     content.value= "";
 }
-
